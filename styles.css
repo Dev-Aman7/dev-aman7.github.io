@@ -147,6 +147,7 @@ body {
 .navbar .navbar-nav > li > a:focus {
 	background-color: transparent;
 	color: #fff;
+	height: 3rem;
 }
 
 .nav li a {
