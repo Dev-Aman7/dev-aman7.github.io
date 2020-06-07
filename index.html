@@ -24,7 +24,7 @@
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-		<div id="content-wrapper">
+		<div id="content-wrapper" id="Home">
 			<header class="header header--bg">
 				<div class="container">
 					<nav class="navbar navbar-expand-lg">
@@ -48,11 +48,17 @@
 							id="myNavbar"
 						>
 							<ul class="navbar-nav text-rigth">
-								<li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">SKILL</a></li>
 								<li class="nav-item">
-									<a class="nav-link" href="#">PORTFOLIO</a>
+									<a class="nav-link" href="#Home">HOME</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#About">ABOUT</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#Skill">SKILL</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#Experiences">EXPERIENCES</a>
 								</li>
 								<!-- <li><a href="#">TEAM</a></li> 
             <li><a href="#">BLOG</a></li>  -->
@@ -89,7 +95,7 @@
 				</div>
 			</header>
 
-			<section class="about">
+			<section class="about" id="About" name="About">
 				<div class="container about__container--narrow">
 					<div class="page-section">
 						<h2 class="page-section__title">ABOUT ME</h2>
@@ -153,20 +159,20 @@
 				</div>
 			</section>
 
-			<section class="skill skill--bg">
+			<section class="skill skill--bg" id="Skill">
 				<div class="container skill__container--narrow">
 					<div class="page-section">
 						<h2 class="page-section__title page-section__title--white pt-3">
-							MY SKILL
+							MY SKILLS
 						</h2>
 						<img
 							class="page-section__title-style"
 							src="assets/images/title-style-white.png"
 							alt=""
 						/>
-						<p class="page-section__paragraph page-section__paragraph--white">
-							Here is a list of my skill. Have a look.
-						</p>
+						<!-- <p class="page-section__paragraph page-section__paragraph--white">
+							Here is a list of my skills. Have a look.
+						</p> -->
 						<div
 							id="carouselExampleIndicators"
 							class="carousel slide"
@@ -189,50 +195,51 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<div class="d-flex mb-5">
-										<div class="col-md-4">
+									<div class="carousel-container mb-5">
+										<div class="col-md-4 col-sm-1">
 											<div class="thumbnail text-center">
 												<img src="assets/images/React.png" alt="" />
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
-										<div class="col-md-4">
+										<div class="col-md-4 col-sm-1">
 											<div class="thumbnail text-center">
 												<img src="assets/images/Nodejs.png" alt="" />
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
-										<div class="col-md-4">
+										<div class="col-md-4 col-sm-1">
 											<div class="thumbnail text-center">
 												<img src="assets/images/Mongodb.png" alt="" />
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
-									<div class="d-flex mb-5">
+									<div class="carousel-container mb-5">
+										--
 										<div class="col-md-4">
 											<div class="thumbnail text-center">
 												<img
@@ -241,13 +248,13 @@
 													alt=""
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -258,13 +265,13 @@
 													alt="html5"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -275,19 +282,19 @@
 													alt="JS"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
-									<div class="d-flex mb-5">
+									<div class="carousel-container mb-5">
 										<div class="col-md-4">
 											<div class="thumbnail text-center">
 												<img
@@ -296,13 +303,13 @@
 													height="128px"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -313,13 +320,13 @@
 													alt="Bootstrap"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -330,13 +337,13 @@
 													height="128px"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
@@ -373,10 +380,10 @@
 				</div>
 			</section>
 
-			<section class="blog">
+			<section class="blog" id="Experiences">
 				<div class="container">
 					<div class="page-section">
-						<h2 class="page-section__title">EXPERIENCE</h2>
+						<h2 class="page-section__title">EXPERIENCES</h2>
 						<img
 							class="page-section__title-style"
 							src="assets/images/title-style.png"
@@ -462,7 +469,7 @@
 				</div>
 			</section>
 
-			<section class="skill skill--bg">
+			<section class="skill skill--bg" id="Achievements">
 				<div class="container skill__container--narrow">
 					<div class="page-section">
 						<h2 class="page-section__title page-section__title--white pt-3">
@@ -488,13 +495,27 @@
 							</ol>
 							<div class="carousel-inner">
 								<div class="carousel-item active">
-									<div class="d-flex mb-5">
+									<div class="carousel-container mb-5">
+										--
 										<div class="col-md-4">
 											<div class="thumbnail text-center">
 												<img src="assets/images/React.png" alt="" />
 												<h4 class="skill__single-part__title">
 													Awarded with 1st Prize
 												</h4>
+												<div class="progress">
+													<div
+														class="progress-bar"
+														role="progressbar"
+														style="width: 80%; background-color: #c99aff;"
+													></div>
+												</div>
+											</div>
+										</div>
+										<div class="col-md-4">
+											<div class="thumbnail text-center">
+												<img src="assets/images/Nodejs.png" alt="" />
+												<h4 class="skill__single-part__title"></h4>
 												<!-- <div class="progress">
 													<div
 														class="progress-bar"
@@ -506,34 +527,21 @@
 										</div>
 										<div class="col-md-4">
 											<div class="thumbnail text-center">
-												<img src="assets/images/Nodejs.png" alt="" />
-												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
-													<div
-														class="progress-bar"
-														role="progressbar"
-														style="width: 80%; background-color: #c99aff;"
-													></div>
-												</div>
-											</div>
-										</div>
-										<div class="col-md-4">
-											<div class="thumbnail text-center">
 												<img src="assets/images/Mongodb.png" alt="" />
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
-									<div class="d-flex mb-5">
+									<div class="carousel-container mb-5">
 										<div class="col-md-4">
 											<div class="thumbnail text-center">
 												<img
@@ -542,13 +550,13 @@
 													alt=""
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -559,13 +567,13 @@
 													alt="html5"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -576,19 +584,19 @@
 													alt="JS"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
 								</div>
 								<div class="carousel-item">
-									<div class="d-flex mb-5">
+									<div class="carousel-container mb-5">
 										<div class="col-md-4">
 											<div class="thumbnail text-center">
 												<img
@@ -597,13 +605,13 @@
 													height="128px"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -614,13 +622,13 @@
 													alt="Bootstrap"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 										<div class="col-md-4">
@@ -631,13 +639,13 @@
 													height="128px"
 												/>
 												<h4 class="skill__single-part__title"></h4>
-												<div class="progress">
+												<!-- <div class="progress">
 													<div
 														class="progress-bar"
 														role="progressbar"
 														style="width: 80%; background-color: #c99aff;"
 													></div>
-												</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
@@ -674,7 +682,7 @@
 				</div>
 			</section>
 
-			<section class="service">
+			<section class="service" id="Services">
 				<div class="container">
 					<div class="page-section">
 						<h2 class="page-section__title">MY SERVICES</h2>
@@ -729,7 +737,7 @@
 				</div>
 			</section>
 
-			<footer class="footer footer--bg">
+			<footer class="footer footer--bg" id="Contact">
 				<div class="container text-center">
 					<h1 class="footer__title"></h1>
 					<ul class="footer__contact-information">

@@ -990,3 +990,13 @@ body {
 	color: #fff;
 	font-family: Roboto-Light;
 }
+
+.carousel-container {
+	display: flex;
+}
+
+@media (max-width: 500px) {
+	.carousel-container {
+		flex-direction: column;
+	}
+}
